@@ -31,19 +31,19 @@ export default function Header() {
       }`}
     >
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" aria-label="Top">
-        <div className="flex h-16 items-center justify-between">
+        <div className="flex h-14 sm:h-16 items-center justify-between">
           <div className="flex-shrink-0">
-            <a href="#" className="text-xl font-bold text-primary">
+            <a href="#" className="text-lg sm:text-xl font-bold text-primary">
               KosKu
             </a>
           </div>
 
-          <div className="hidden md:flex md:items-center md:gap-8">
+          <div className="hidden md:flex md:items-center md:gap-6 lg:gap-8">
             {navigation.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="text-sm font-medium text-gray-600 hover:text-primary transition-colors"
+                className="text-sm font-medium text-gray-600 hover:text-primary transition-colors whitespace-nowrap"
               >
                 {link.name}
               </a>
@@ -53,7 +53,7 @@ export default function Header() {
           <div className="hidden md:flex md:items-center">
             <a
               href="#download"
-              className="inline-flex items-center justify-center rounded-lg bg-primary px-4 py-2 text-sm font-medium text-white hover:bg-primary-dark transition-colors shadow-sm hover:shadow-md"
+              className="inline-flex items-center justify-center rounded-lg bg-primary px-3 sm:px-4 py-2 text-sm font-medium text-white hover:bg-primary-dark transition-colors shadow-sm hover:shadow-md whitespace-nowrap"
             >
               Download KosKu
             </a>
@@ -68,11 +68,11 @@ export default function Header() {
             aria-label="Buka menu"
           >
             {mobileMenuOpen ? (
-              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
+              <svg className="h-5 w-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
               </svg>
             ) : (
-              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
+              <svg className="h-5 w-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
               </svg>
             )}
@@ -81,25 +81,25 @@ export default function Header() {
 
         <div
           id="mobile-menu"
-          className={`md:hidden transition-all duration-200 ease-in-out ${
+          className={`md:hidden transition-all duration-300 ease-in-out ${
             mobileMenuOpen
               ? "max-h-screen opacity-100 visible border-t border-gray-200"
               : "max-h-0 opacity-0 invisible border-t border-transparent"
           } overflow-hidden`}
           aria-hidden={!mobileMenuOpen}
         >
-          <div className="space-y-1 py-4">
+          <div className="space-y-1 py-3 sm:py-4">
             {navigation.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="block rounded-md px-3 py-2 text-base font-medium text-gray-600 hover:text-primary hover:bg-gray-50 transition-colors"
+                className="block rounded-md px-3 py-2.5 text-base font-medium text-gray-600 hover:text-primary hover:bg-gray-50 transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {link.name}
               </a>
             ))}
-            <div className="pt-4">
+            <div className="pt-3 sm:pt-4">
               <a
                 href="#download"
                 className="flex items-center justify-center rounded-lg bg-primary px-4 py-3 text-base font-medium text-white hover:bg-primary-dark transition-colors shadow-sm"
