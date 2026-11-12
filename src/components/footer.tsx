@@ -50,7 +50,7 @@ export default function Footer() {
 
         <div className="mt-8 sm:mt-10 lg:mt-12 pt-6 sm:pt-8 border-t border-gray-200">
           <p className="text-sm text-gray-500 text-center">
-            &copy; {new Date().getFullYear()} KosKu. Hak cipta dilindungi. <br /> Designed & Developed by zyydev.
+            &copy; {new Date().getFullYear()} KosKu. Hak cipta dilindungi. <br /> Designed & Developed by galangdev.
           </p>
         </div>
       </div>
