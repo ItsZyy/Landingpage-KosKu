@@ -6,7 +6,6 @@ const navigation = [
   { name: "Home", href: "#home" },
   { name: "Tentang", href: "#about" },
   { name: "Fitur", href: "#features" },
-  { name: "Cara Kerja", href: "#how-it-works" },
 ];
 
 export default function Header() {

@@ -18,11 +18,7 @@ export default function Footer() {
                   Fitur
                 </a>
               </li>
-              <li>
-                <a href="#faq" className="text-sm text-gray-600 hover:text-primary transition-colors">
-                  FAQ
-                </a>
-              </li>
+          
               <li>
                 <a href="#download" className="text-sm text-gray-600 hover:text-primary transition-colors">
                   Unduh
