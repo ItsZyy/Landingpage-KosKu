@@ -19,7 +19,8 @@ export default function HeroSection() {
             </p>
             <div className="mt-6 sm:mt-8 lg:mt-10 flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4">
               <a
-                href="#download"
+                href="/downloads/KosKu.apk"
+                download="KosKu.apk"
                 className="inline-flex items-center justify-center rounded-lg bg-primary px-5 sm:px-6 py-3 sm:py-3.5 text-sm sm:text-base font-semibold text-white hover:bg-primary-dark transition-colors w-full sm:w-auto"
               >
                 Download KosKu

@@ -50,7 +50,8 @@ export default function Header() {
 
           <div className="hidden md:flex md:items-center">
             <a
-              href="#download"
+              href="/downloads/KosKu.apk"
+              download="KosKu.apk"
               className="inline-flex items-center justify-center rounded-xl bg-primary px-4 sm:px-5 py-2.5 text-sm sm:text-base font-semibold text-white hover:bg-primary-dark transition-all shadow-xs hover:shadow-md hover:-translate-y-0.5 whitespace-nowrap"
             >
               Download KosKu
@@ -100,7 +101,8 @@ export default function Header() {
             ))}
             <div className="pt-3">
               <a
-                href="#download"
+                href="/downloads/KosKu.apk"
+                download="KosKu.apk"
                 className="flex items-center justify-center rounded-xl bg-primary px-4 py-3 text-base font-semibold text-white hover:bg-primary-dark transition-colors shadow-xs"
                 onClick={() => setMobileMenuOpen(false)}
               >

@@ -13,6 +13,8 @@ type FeatureItem = {
 type FeatureTab = {
   id: string;
   label: string;
+  image: string;
+  imageAlt: string;
   items: FeatureItem[];
 };
 
@@ -20,6 +22,8 @@ const tabs: FeatureTab[] = [
   {
     id: "pemilik",
     label: "Untuk Pemilik",
+    image: "/mockup/pemilik.png",
+    imageAlt: "Tampilan aplikasi KosKu untuk pemilik kos",
     items: [
       {
         title: "Kelola Kamar",
@@ -56,6 +60,8 @@ const tabs: FeatureTab[] = [
   {
     id: "penghuni",
     label: "Untuk Penghuni",
+    image: "/mockup/penghuni.png",
+    imageAlt: "Tampilan aplikasi KosKu untuk penghuni kos",
     items: [
       {
         title: "Info Kamar",
@@ -92,6 +98,8 @@ const tabs: FeatureTab[] = [
   {
     id: "keuangan",
     label: "Keuangan",
+    image: "/mockup/keuangan.png",
+    imageAlt: "Tampilan fitur keuangan aplikasi KosKu",
     items: [
       {
         title: "Konfirmasi Masuk",
@@ -214,10 +222,11 @@ export default function FeatureSection() {
 
           <div className="order-first mx-auto w-[180px] sm:w-[220px] lg:order-none lg:w-[250px]">
             <Image
-              src="/kosku.png"
-              alt="Tampilan aplikasi KosKu"
-              width={2030}
-              height={4256}
+              key={active.image}
+              src={active.image}
+              alt={active.imageAlt}
+              width={373}
+              height={669}
               className="h-auto w-full"
             />
           </div>

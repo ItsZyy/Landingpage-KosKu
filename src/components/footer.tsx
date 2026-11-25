@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="border-t border-gray-200 bg-gray-50">
@@ -20,7 +22,7 @@ export default function Footer() {
               </li>
           
               <li>
-                <a href="#download" className="text-sm text-gray-600 hover:text-primary transition-colors">
+                <a href="/downloads/KosKu.apk" download="KosKu.apk" className="text-sm text-gray-600 hover:text-primary transition-colors">
                   Unduh
                 </a>
               </li>
@@ -31,13 +33,18 @@ export default function Footer() {
             <h3 className="font-semibold text-gray-900 text-sm sm:text-base">Developer</h3>
             <ul className="mt-3 sm:mt-4 space-y-2">
               <li>
-                <a href="#about" className="text-sm text-gray-600 hover:text-primary transition-colors">
+                <Link href="/about" className="text-sm text-gray-600 hover:text-primary transition-colors">
                   Tentang
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-sm text-gray-600 hover:text-primary transition-colors">
-                  Kontak
+                <a
+                  href="https://wa.me/6281215035275"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-gray-600 hover:text-primary transition-colors"
+                >
+                  WhatsApp
                 </a>
               </li>
             </ul>
